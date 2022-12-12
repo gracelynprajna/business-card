@@ -2,33 +2,54 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+
+function Header() {
+  return(
+      <div className="header">
+          <img className="me" src="./headshot.jpg"/>
+          <h1>Gracelyn Prajna</h1>
+          <h4>Aspiring Web Developer</h4>
+          <span><a href="#">gracelynprajna@gmail.com</a></span>
+          <div className="buttons">
+              <button className="btn-email">Email</button>
+              <button className="btn-github">Github</button>
+          </div>    
+      </div> 
+  )
+}
+
+function About(){
+  return(
+    <div className='about'>
+      <h4>About Me</h4>
+      <p>I am currently a web development fellow at The Knowledge House perfecting my skill in HTML, CSS, Javascript, and React. I am always looking for new things to learn and how I can upskill.</p>
     </div>
   )
 }
+
+
+function Footer() {
+  return(
+      <div className="footer">
+      <img src=""/>
+      </div>
+  )
+}
+
+
+function App() {
+
+  return (
+    <div className="app">
+      <Header/>
+      <About/>
+      <Footer/>
+    </div>
+  )
+}
+
+
 
 export default App
