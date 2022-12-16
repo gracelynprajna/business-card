@@ -29,6 +29,15 @@ function About(){
   )
 }
 
+function Interests(){
+  return(
+    <div classname="interests">
+      <h4>Interests</h4>
+      <p>Other than looking for inspiration for my next projects, I enjoy trying new coffee shops, exploring different restaurants, and cooking.</p>
+    </div>
+  )
+}
+
 
 function Footer() {
   return(
@@ -45,6 +54,7 @@ function App() {
     <div className="app">
       <Header/>
       <About/>
+      <Interests/>
       <Footer/>
     </div>
   )
